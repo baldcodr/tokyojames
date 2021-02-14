@@ -34,22 +34,30 @@ class Main extends React.Component {
           <h2 className="major">Stockist</h2>
           <span className="image main">
             {/* <img src={lfw} alt="" /> */}
-            <h3>Africa/Europe</h3>
-            <div class="grid-container">
+            <h3>Africa</h3>
+            <p>Temple Muse</p>
+
+            <h3>Europe</h3>
+            <p>Browns</p>
+
+            <h3>Online</h3>
+            <p>FarFetch<br/>Folklore</p>
+
+            {/* <div class="grid-container">
             <div class="grid-item"><img src={templemuse} alt="" /></div>
             <div class="grid-item"><img src={browns} alt="" /></div>
             </div>
 
-            {/* <h3>Europe</h3>
+            <h3>Europe</h3>
             <div class="grid-container">
             <div class="grid-item"><img src={browns} alt="" /></div>
-            </div> */}
+            </div>
 
             <h3>Online</h3>
             <div class="grid-container">
             <div class="grid-item"><img src={farfetch} alt="" /></div>
             <div class="grid-item"><img src={folklore} alt="" /></div>
-            </div>
+            </div> */}
 
           </span>
           <p>
@@ -59,7 +67,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article
+        {/* <article
           id="work"
           className={`${this.props.article === 'work' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -67,15 +75,15 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Shop</h2>
-          {/* <span className="image main">
+          <span className="image main">
             <img src={tokyojames} alt="" />
-          </span> */}
+          </span>
           <h3>
             COMING SOON!!!
           </h3>
 
           {close}
-        </article>
+        </article> */}
 
         <article
           id="about"

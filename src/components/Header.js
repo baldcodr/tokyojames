@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import Logo from '../images/logo.png'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -8,10 +9,12 @@ const Header = props => (
     </div> */}
     <div className="content">
       <div className="inner">
-        <h1>Tokyo James</h1>
-        <p>
+        <div >
+         <img src={Logo} />
+        </div>
+        {/* <p>
         ‘OGIDI OKUNRIN’
-        </p>
+        </p> */}
       </div>
     </div>
     <nav>
@@ -25,7 +28,7 @@ const Header = props => (
             Stockists
           </button>
         </li>
-        <li>
+        {/* <li>
           <button
             onClick={() => {
               props.onOpenArticle('work')
@@ -33,7 +36,7 @@ const Header = props => (
           >
             Shop
           </button>
-        </li>
+        </li> */}
         <li>
           <button
             onClick={() => {
