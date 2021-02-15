@@ -66,8 +66,8 @@
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
-    border: solid _size(border-width) _palette(border);
-    border-radius: 100%;
+    // border: solid _size(border-width) _palette(border);
+    // border-radius: 100%;
 
     .icon {
       &:before {
@@ -112,26 +112,29 @@
   nav {
     ul {
       @include vendor('display', 'flex');
-      margin-bottom: 0;
+      // margin-bottom: 0;
       list-style: none;
-      padding-left: 0;
+      padding: auto;
+      margin: auto;
       // border: solid _size(border-width) _palette(border);
-      border-radius: _size(border-radius);
+      // border-radius: _size(border-radius);
 
       li {
         // padding-left: 0;
         // border-left: solid _size(border-width) _palette(border);
 
-        &:first-child {
-          border-left: 0;
-        }
+        // &:first-child {
+        //   border-left: 0;
+        // }
 
         button {
           display: block;
           min-width: 7.5rem;
           height: 2.75rem;
+          margin: auto;
+          padding: auto;
           // line-height: 2.75rem;
-          padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+          // padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
           text-transform: uppercase;
           letter-spacing: _font(letter-spacing);
           font-size: 0.8rem;
@@ -157,7 +160,7 @@
         display: block;
         position: absolute;
         top: 0;
-        left: calc(50% - #{_size(border-width) * 1});
+        // left: calc(50% - #{_size(border-width) * 1});
         width: _size(border-width);
         height: 100%;
         background: _palette(border);

@@ -38,7 +38,7 @@ class Main extends React.Component {
             <p>Temple Muse</p>
 
             <h3>Europe</h3>
-            <p>Browns</p>
+            <p>Browns<br/>Paradise Garage</p>
 
             <h3>Online</h3>
             <p>FarFetch<br/>Folklore</p>
