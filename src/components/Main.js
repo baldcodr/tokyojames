@@ -60,10 +60,10 @@ class Main extends React.Component {
             </div> */}
 
           </span>
-          <p>
+          {/* <p>
             Our products are available for purchase on these stores or 
             contact us directly.
-          </p>
+          </p> */}
           {close}
         </article>
 
@@ -119,18 +119,18 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+          {/* <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
           
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="name" id="name" required/>
             </div>
 
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="email" name="email" id="email" required/>
             </div>
 
             <div className="field">
@@ -145,7 +145,15 @@ class Main extends React.Component {
                 <input type="reset" value="Reset" />
               </li>
             </ul>
-          </form>
+          </form> */}
+          <p>Info@tokyojames.co.uk</p>
+          <p>Press : <br/>
+            Kehinde@theatentive.com</p>
+          <p>
+          <p>
+            Business Enquiry:<br/>
+            Nathalie@tokyojames.co.uk
+          </p>
           <ul className="icons">
             <li>
               <a
@@ -166,6 +174,7 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
+          </p>
           {close}
         </article>
       </div>
