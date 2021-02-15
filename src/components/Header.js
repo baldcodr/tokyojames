@@ -10,7 +10,7 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <div >
-         <a className="mainlogo" href="/"><img src={Logo} /></a>
+         <img src={Logo} />
         </div>
         {/* <p>
         ‘OGIDI OKUNRIN’
