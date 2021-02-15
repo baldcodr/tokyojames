@@ -146,8 +146,9 @@ class Main extends React.Component {
               </li>
             </ul>
           </form> */}
-          <p>Info@tokyojames.co.uk</p>
-          <p>Press : <br/>
+          <p>General: <br/>
+          Info@tokyojames.co.uk</p>
+          <p>Press: <br/>
             Kehinde@theatentive.com</p>
           <p>
           <p>
