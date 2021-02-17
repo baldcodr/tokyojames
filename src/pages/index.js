@@ -1,8 +1,9 @@
 import React from 'react'
 import '../assets/scss/main.scss'
 import Helmet from 'react-helmet'
-import YouTube from 'react-youtube';
-import Layout from '../components/layout'
+// import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player'
+// import Layout from '../components/layout'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
@@ -15,7 +16,8 @@ class IndexPage extends React.Component {
       timeout: false,
       articleTimeout: false,
       article: '',
-      loading: 'is-loading'
+      loading: 'is-loading',
+      muted: true,
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
@@ -104,6 +106,7 @@ class IndexPage extends React.Component {
   render() {
     // const siteTitle = this.props.data.site.siteMetadata.title
     // const siteDescription = this.props.data.site.siteMetadata.description
+    const { muted } = this.state;
   
     const videoOptions = {
       playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -116,13 +119,18 @@ class IndexPage extends React.Component {
     return (
       <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
       <Helmet>
-          <title> Tokyo James</title>
+          <title> Tokyo James | Official Website</title>
           <meta name="description" content="Tokyo James Fashion Brand UK/Nigeria" />
       </Helmet>
 
       <div id="wrapper">
 
         <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+        <div
+						className='volume'
+						onClick={() => this.setState({ muted: !muted })}>
+						sound {this.state.muted ? "off" : "on"}
+					</div>
         <Main
           isArticleVisible={this.state.isArticleVisible}
           timeout={this.state.timeout}
@@ -137,13 +145,21 @@ class IndexPage extends React.Component {
 
       <div className="video-background">
         <div className="video-foreground">
-          <YouTube
+        <ReactPlayer 
+        url='https://www.youtube.com/watch?v=v_ulgBFDz90'
+        playing='true'
+        loop='true'
+        volume={1}
+        muted={muted}
+         />
+          {/* <YouTube
             videoId="v_ulgBFDz90"
             opts={videoOptions}
             className="video-iframe"
+            muted={muted}
             onReady={this._onReady}
             onEnd={this._onEnd}
-          />
+          /> */}
         </div>
       </div>
     </div>
