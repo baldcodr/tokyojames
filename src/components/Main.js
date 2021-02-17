@@ -151,10 +151,10 @@ class Main extends React.Component {
           <p>Press: <br/>
             Kehinde@theatentive.com</p>
           <p>
-          <p>
             Business Enquiry:<br/>
             Nathalie@tokyojames.co.uk
           </p>
+          <div>
           <ul className="icons">
             <li>
               <a
@@ -175,7 +175,7 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
-          </p>
+          </div>
           {close}
         </article>
       </div>

@@ -147,8 +147,8 @@ class IndexPage extends React.Component {
         <div className="video-foreground">
         <ReactPlayer 
         url='https://www.youtube.com/watch?v=v_ulgBFDz90'
-        playing='true'
-        loop='true'
+        playing={true}
+        loop={true}
         volume={1}
         muted={muted}
          />
