@@ -156,22 +156,27 @@ class Main extends React.Component {
           </p>
           <div>
           <ul className="icons">
+          <li>
+              <a href="https://instagram.com/tokyojamess" 
+              className="icon fa-instagram"
+              target="_blank">
+                <span className="label">Instagram</span>
+              </a>
+            </li>
             <li>
               <a
-                href="https://twitter.com/tokyojames"
+                href="https://twitter.com/tokyojamess"
                 className="icon fa-twitter"
+                target="_blank"
               >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="https://tokyojames.co.uk" className="icon fa-facebook">
+              <a href="https://facebook.com/tokyo.james" 
+              className="icon fa-facebook"
+              target="_blank">
                 <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com/tokyojamess" className="icon fa-instagram">
-                <span className="label">Instagram</span>
               </a>
             </li>
           </ul>
