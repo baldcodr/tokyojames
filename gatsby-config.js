@@ -47,5 +47,6 @@ module.exports = {
         siteSpeedSampleRate: 10,
         cookieDomain: "tokyojames.netlify.app",
       },
+    }
   ],
 }
